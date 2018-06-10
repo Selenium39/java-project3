@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wantao.dao.StudentMapper"><!--面向接口编程命名空间为接口全类名  -->
+	<select id="addStudent" resultType="com.wantao.bean.Student"> 
+	insert into tb_student(studentId,studentName,password,sclass) values(#{studentId},#{studentName},#{password},#{sclass}) 
+	</select>
+	<select id="findStudentByStudentId" resultType="com.wantao.bean.Student">
+	select * from tb_student where studentId=#{studentId}
+	</select>
+	<select id="findAllStudent" resultType="com.wantao.bean.Student">
+	select * from tb_student
+	</select>
+	<select id="findAllStudentId" resultType="java.lang.String">
+	select studentId from tb_student
+	</select>
+	<update id="updateStudent">
+	update tb_student set studentName=#{studentName},password=#{password},score=#{score},sclass=#{sclass} where studentId=#{studentId}
+	</update>
+	<delete id="deleteStudent">
+	delete from tb_student where studentId=#{studentId}
+	</delete>
+</mapper>

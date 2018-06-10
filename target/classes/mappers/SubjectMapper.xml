@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?> <!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wantao.dao.SubjectMapper"><!--面向接口编程命名空间为接口全类名 -->
+	<insert id="addSubject">
+		insert into
+		tb_subject(subjectTitle,subjectOptionA,subjectOptionB,subjectOptionC,subjectOptionD,subjectAnswer,subjectParse)
+		values(#{subjectTitle},#{subjectOptionA},#{subjectOptionB},#{subjectOptionC},#{subjectOptionD},#{subjectAnswer},#{subjectParse})
+	</insert>
+	<select id="findAllSubject" resultType="com.wantao.bean.Subject">
+		select * from tb_subject
+	</select>
+	<select id="findSubjectById" resultType="com.wantao.bean.Subject">
+	select * from tb_subject where subjectId=#{subjectId}
+	</select>
+	<select id="findAllSubjectId" resultType="java.lang.Integer">
+	select subjectId from tb_subject;
+	</select>
+	<select id="findSubjectBySubjectTitle" resultType="com.wantao.bean.Subject">
+	select * from tb_subject where subjectTitle like concat ('%',#{subjectTitle},'%')
+	</select>
+	<select id="randomFindSubject" resultType="com.wantao.bean.Subject">
+	select * from tb_subject order by rand() limit 20
+	</select>
+	<update id="updateSubject">
+	  update tb_subject set subjectTitle=#{subjectTitle},subjectOptionA=#{subjectOptionA},subjectOptionB=#{subjectOptionB},subjectOptionC=#{subjectOptionC},subjectOptionD=#{subjectOptionD},subjectAnswer=#{subjectAnswer},subjectParse=#{subjectParse} where subjectId=#{subjectId}
+	</update>
+	<delete id="deleteSubject">
+	  delete from tb_subject where subjectId=#{subjectId}
+	</delete>	
+</mapper>
