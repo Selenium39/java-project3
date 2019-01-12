@@ -32,3 +32,72 @@ http://www.jb51.net/article/42229.htm
 1.架构分成了四层:①表现层②业务逻辑层③持久层④数据库层,写代码时思路就比较清晰.<br/>
 2.修改试题 增加试题 删除试题 都是用的同一个success.jsp通过```<c:choose><c:when></c:when></c:choose>```实现.
 3.这次不像<a href="https://github.com/wantao666/java-project2" target="_blank">java-project2</a>那样自己写的分页，而是用的刘增辉大神写的pagehelper,真的简单多了.
+
+### 项目截图
+
+#### 0.项目目录
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/25.png?raw=true">
+<br/>
+####  1.首页
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/1.png?raw=true">
+<br/>
+####  2.注册页面
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/2.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/3.png?raw=true">
+<br/>
+#### 3.管理员登录
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/4.png?raw=true">
+<br/>
+#### 4.管理员登录首页
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/5.png?raw=true">
+<br/>
+#### 5.导入试题
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/6.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/7.png?raw=true">
+<br/>
+#### 6.管理试题
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/8.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/10.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/11.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/12.png?raw=true">
+<br/>
+#### 7.查看试题
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/9.png?raw=true">
+<br/>
+#### 8.查看试题
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/13.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/14.png?raw=true">
+<br/>
+#### 9.管理学生
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/15.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/16.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/17.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/18.png?raw=true">
+<br/>
+#### 10.学生登录
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/19.png?raw=true">
+<br/>
+#### 11.学生首页
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/20.png?raw=true">
+<br/>
+#### 12.学生考试界面
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/21.png?raw=true">
+<br/>
+#### 13.自动得出分数界面
+<br/>
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/22.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/23.png?raw=true">
+<img src="https://github.com/wantao666/java-project3/blob/master/result-image/24.png?raw=true">
+<br/>
