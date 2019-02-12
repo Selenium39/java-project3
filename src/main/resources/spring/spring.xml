@@ -23,7 +23,7 @@
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/db_project3?useSSL=true"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="15773272279wt..A"></property>
+		<property name="password" value="你自己的数据库密码"></property>
 	</bean>
 
 	<!-- 2.配置sqlSessionFactoryBean -->
